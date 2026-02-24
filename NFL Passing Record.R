@@ -320,13 +320,15 @@ print(paste("Matthew Stafford's share of possible yardage:", 4707/12404))
 print(paste("Matthew Stafford's share of actual yardage:", 4707/6709))
 
 # League analysis
-# Creating a line chart of median starting points
+# Compute the median starting field position by season
 median_by_season <- drive_starts %>%
   group_by(season) %>%
   summarise(
     median_start = median(drive_start_yards_to_endzone, na.rm = TRUE)
   )
 View(median_by_season)
+
+# Create a line chart of the median starting field position from 2000
 median_starting_pos <- ggplot(median_by_season, aes(x= season, y = median_start)) +
   geom_line(linewidth = 1) +
   geom_point(size = 2) +
@@ -363,11 +365,10 @@ touchback_perct_by_year <- kickoffs %>%
 View(touchback_perct_by_year)
 
 # Calculate the percentage of touchbacks during 2011-2015 seasons
-touchback_perc_11_15 = mean(touchback_perct_by_year$touchback_perct[touchback_perct_by_year$season >= 2011 & touchback_perct_by_year$season <=2015])
-touchback_perc_11_15
+mean(touchback_perct_by_year$touchback_perct[touchback_perct_by_year$season >= 2011 & touchback_perct_by_year$season <=2015])
+
 # Calculate the percentage of touchbacks during 2016-2023 seasons
-touchback_perc_16_23 = mean(touchback_perct_by_year$touchback_perct[touchback_perct_by_year$season >= 2016 & touchback_perct_by_year$season <=2023])
-touchback_perc_16_23
+mean(touchback_perct_by_year$touchback_perct[touchback_perct_by_year$season >= 2016 & touchback_perct_by_year$season <=2023])
 
 
 
