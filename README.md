@@ -11,11 +11,11 @@ The data used is from the 'nflfastR' package in R. A link to their website for a
 ```bash
 https://nflfastr.com/articles/nflfastR.html
 ```
-### `NFL Passing Record.R`
+### `Dynamic_Kickof_And_NFL_Passing_Record_Analysis.R`
 
 This R script includes all necessary packages, libraries, data loading, and analysis code to reproduce the results. It generates all charts and visualizations included in the report.
 
-### `Passing Record Report.pdf`
+### `Dynamic_Kickoff_And_NFL_Passing_Record_Report.pdf`
 
 This PDF report summarizes the analysis and includes charts and visualizations created in the R script. Hyperlinks are included for each section and subsection to allow efficient navigation throughout the document.
 
