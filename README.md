@@ -2,10 +2,15 @@
 
 This repository contains an analysis of how the NFL's new "Dynamic Kickoff" affects the likelihood of breaking the single-season passing record. The project explores how kickoff rule changes and starting field position impact both team and individual performance.
 
-## Repository Structure
+### Repository Structure
 
 This repository contains the code and final report for the analysis.
 
+### Data Source
+The data used is from the 'nflfastR' package in R. A link to their website for additional assistance and use cases is provided here:
+```bash
+https://nflfastr.com/articles/nflfastR.html
+```
 ### `NFL Passing Record.R`
 
 This R script includes all necessary packages, libraries, data loading, and analysis code to reproduce the results. It generates all charts and visualizations included in the report.
