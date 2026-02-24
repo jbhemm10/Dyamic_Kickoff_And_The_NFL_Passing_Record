@@ -19,7 +19,7 @@ To reproduce the final results follow these steps:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/jbhemm10/Dynamic_Kickoff_And_The_NFL_Passing_Record.git
+   git clone https://github.com/jbhemm10/Dyamic_Kickoff_And_The_NFL_Passing_Record/tree/main
    cd Dynamic_Kickoff_And_The_NFL_Passing_Record
 
 2. Open NFL Passing Record.R in R or RStudio
